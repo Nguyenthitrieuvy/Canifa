@@ -1,0 +1,65 @@
+@mixin posAbsolute($direction, $x: 0, $y: 0) {
+    position: absolute;
+
+    @if ($direction == "tl") {
+        top: $y;
+        left: $x;
+    }
+    @if ($direction == "tr") {
+        top: $y;
+        right: $x;
+    }
+    @if ($direction == "bl") {
+        bottom: $y;
+        left: $x;
+    }
+    @if ($direction == "br") {
+        bottom: $y;
+        right: $x;
+    }
+    @if ($direction == "centerbX") {
+        bottom: $y;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if ($direction == "centertX") {
+        top: $y;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    @if ($direction == "centerlY") {
+        top: 50%;
+        left: $x;
+        transform: translateY(-50%);
+    }
+    @if ($direction == "centerrY") {
+        top: 50%;
+        right: $x;
+        transform: translateY(-50%);
+    }
+    @if ($direction == "centerXY") {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@mixin dflex($align, $justify, $wrap, $gap) {
+    display: flex;
+
+    @if ($align == "center") {
+        align-items: center;
+    }
+    @if ($justify == "center") {
+        justify-content: center;
+    }
+    @if ($justify == "between") {
+        justify-content: space-between;
+    }
+    @if ($wrap == "wrap") {
+        flex-wrap: wrap;
+    }
+    @if ($gap > 0) {
+        gap: $gap;
+    }
+}

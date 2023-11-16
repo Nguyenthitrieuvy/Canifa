@@ -1,0 +1,45 @@
+.s-icon {
+    .s_list{
+        display: flex;
+        flex-wrap: wrap;
+        .s_card{
+            width: calc(100% / 7);
+            margin-bottom: 30px;
+            @media(max-width:991px){
+                width: calc(100% / 4);
+            }
+            @media(max-width:575px){
+                width: calc(100% / 3);
+            }
+            @media(max-width:479px){
+                width: calc(100% / 2);
+            }
+        }
+    }
+    h1 {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 20px;
+    }
+    img {
+        width: 50%;
+        margin: 0 auto;
+        transition: 0.5s;
+    }
+    h3 {
+        font-size: 16px;
+        text-align: center;
+        margin-top: 10px;
+        transition: 0.5s;
+    }
+    .s_card{
+        &:hover{
+            img{
+                transform: scale(1.1);
+            }
+            h3{
+                color: $primary-color;
+            }
+        }
+    }
+}

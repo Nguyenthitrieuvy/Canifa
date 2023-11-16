@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="c-header">
+            <marquee behavior="" direction=""> Thêm vào giỏ 599.000 ₫ để miễn phí vận chuyển </marquee>
+            <div class="container d-flex align-items-center">
+                <a href="" class="c_logo"><img src="image/logo.jpg" alt="" /></a>
+                <ul>
+                    <li><a href="">NEW PRODUCTS</a></li>
+                    <li><a href="">FEMALE</a></li>
+                    <li><a href="">MALE</a></li>
+                    <li><a href="">CHILDRENS</a></li>
+                    <li><a href="">GOOD PRICE</a></li>
+                </ul>
+                <div class="c_seach">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Seach" />
+                </div>
+                <div class="c_card">
+                    <a href=""><i class="fa-solid fa-store"></i> <span>Stores</span></a>
+                    <a href="javascript:;" data-bs-toggle="modal" data-bs-target="#login"><i class="fa-solid fa-user"></i> <span>Account</span></a>
+
+                    <a href=""
+                        ><i class="fa-solid fa-cart-shopping"></i> <span>Cart</span>
+                        <p>0</p></a
+                    >
+                </div>
+
+                <div class="c_icon" data-bs-toggle="offcanvas" data-bs-target="#menu_bar"><i class="fa-solid fa-bars"></i></div>
+            </div>
+        </div>
+        <!-- The Modal -->
+        <div class="modal c-login" id="login">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img src="image/account-login.png" alt="" />
+                        <h4 class="modal-title">Hello,</h4>
+                        <p>Enter phone number to Register / Log in to Canifa account.</p>
+                        <input type="text" placeholder="Please enter your phone number" />
+                        <button>Continue</button>
+                        <p>
+                            * By pressing continue, you confirm that you have read and agree to Canifa's <a href="">Terms of Service</a> and
+                            <a href="">Privacy Policy</a>.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offcanvas Sidebar -->
+        <div class="offcanvas offcanvas-end" id="menu_bar">
+            <div class="offcanvas-header">
+                <h1 class="offcanvas-title">CANIFA</h1>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="">NEW PRODUCTS</a></li>
+                    <li><a href="">FEMALE</a></li>
+                    <li><a href="">MALE</a></li>
+                    <li><a href="">CHILDRENS</a></li>
+                    <li><a href="">GOOD PRICE</a></li>
+                </ul>
+                <div class="offcanvas-seach">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Seach" />
+                </div>
+            </div>
+        </div>
+        <!-- Carousel -->
+        <div id="slide_banner" class="carousel slide mt-2" data-bs-ride="carousel">
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slide_banner" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#slide_banner" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#slide_banner" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="image/banner/banner_1.webp" alt="Los Angeles" class="d-block w-100" />
+                </div>
+                <div class="carousel-item">
+                    <img src="image/banner/banner_2.webp" alt="Chicago" class="d-block w-100" />
+                </div>
+                <div class="carousel-item">
+                    <img src="image/banner/banner_3.webp" alt="Chicago" class="d-block w-100" />
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#slide_banner" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slide_banner" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <div class="s-icon mt-5">
+            <div class="container">
+                <h1 class="mb-5">WHAT DO YOU WANT TO FIND</h1>
+                <div class="s_list">
+                    <div class="s_card">
+                        <img src="image/icon/icon-1.webp" alt="" />
+                        <h3>TROUSER</h3>
+                    </div>
+                    <div class="s_card">
+                        <img src="image/icon/icon-2.webp" alt="" />
+                        <h3>SKIRT</h3>
+                    </div>
+                    <div class="s_card">
+                        <img src="image/icon/icon-3.webp" alt="" />
+                        <h3>T-SHIRT</h3>
+                    </div>
+                    <div class="s_card">
+                        <img src="image/icon/icon-4.webp" alt="" />
+                        <h3>HOODIE</h3>
+                    </div>
+                    <div class="s_card">
+                        <img src="image/icon/icon-5.webp" alt="" />
+                        <h3>SWEATHER</h3>
+                    </div>
+                    <div class="s_card">
+                        <img src="image/icon/icon-6.webp" alt="" />
+                        <h3>SHIRT</h3>
+                    </div>
+                    <div class="s_card">
+                        <img src="image/icon/icon-7.webp" alt="" />
+                        <h3>DRESS</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-card">
+            <div class="container">
+                <div class="c_cardproduct">
+                    <h3 class="h4 mb-3">Sweatshirts</h3>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="c_readmode">
+                                <img src="image/clother/ao ni_1.webp" alt="" />
+                                <a href="">READ MODE</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao ni_2.webp" alt="" />
+                                            <img class="front" src="image/clother/ao ni_3.webp" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <h4 class="h6">Women's printed hem sweatshirt</h4>
+                                        <p>249.000 VDN</p>
+                                        <span>New products</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao ni_3.webp" alt="" />
+                                            <img class="front" src="image/clother/ao ni_4.webp" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="h6">Sweatshirt with Chip & Dale print</h4>
+                                        <p>499.000 VDN</p>
+                                        <span class="bg-danger">Good price</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao ni_4.webp" alt="" />
+                                            <img class="front" src="image/clother/ao ni_2.webp" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="h6">Women's sweatshirts with prints</h4>
+                                        <p>499.000 VDN</p>
+                                        <span>New products</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_tag">
+                                <ul>
+                                    <li><a href="">TROUSER</a></li>
+                                    <li><a href="">SKIRT</a></li>
+                                    <li><a href="">T-SHIRT</a></li>
+                                    <li><a href="">HOODIE</a></li>
+                                    <li><a href="">SWEATHER</a></li>
+                                    <li><a href="">SHIRT</a></li>
+                                    <li><a href="">DRESS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c_cardproduct">
+                    <h3 class="h4 mb-3">Sweater</h3>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="c_readmode">
+                                <img src="image/clother/ao len_1.webp" alt="" />
+                                <a href="">READ MODE</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao len_2.webp" alt="" />
+                                            <img class="front" src="image/clother/ao len_3.webp" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <h4 class="h6">Women's cotton sweater fits well</h4>
+                                        <p>499.000 VDN</p>
+                                        <span>New products</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao len_3.webp" alt="" />
+                                            <img class="front" src="image/clother/ao len_4.webp" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <h4 class="h6">Women's sweater with round arms</h4>
+                                        <p>299.000 VDN</p>
+                                        <span class="bg-danger">Good price</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao len_4.webp" alt="" />
+                                            <img class="front" src="image/clother/ao len_2.webp" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <h4 class="h6">Women's polo neck sweater with loose sleeves</h4>
+                                        <p>499.000 VDN</p>
+                                        <span>New products</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_tag">
+                                <ul>
+                                    <li><a href="">TROUSER</a></li>
+                                    <li><a href="">SKIRT</a></li>
+                                    <li><a href="">T-SHIRT</a></li>
+                                    <li><a href="">HOODIE</a></li>
+                                    <li><a href="">SWEATHER</a></li>
+                                    <li><a href="">SHIRT</a></li>
+                                    <li><a href="">DRESS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="c_cardproduct">
+                    <h3 class="h4 mb-3">Wind Jacket</h3>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="c_readmode">
+                                <img src="image/clother/ao khoac_1.webp" alt="" />
+                                <a href="">READ MODE</a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao khoac_2.webp" alt="" />
+                                            <img class="front" src="image/clother/ao khoac_3.jpeg" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+                                        <h4 class="h6">Women's wind jacket</h4>
+                                        <p>499.000 VDN</p>
+                                        <span>New products</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao khoac_3.jpeg" alt="" />
+                                            <img class="front" src="image/clother/ao khoac_4.webp" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="h6">Women's two-layer windbreaker with hood</h4>
+                                        <p>299.000 VDN</p>
+                                        <span class="bg-danger">Good price</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="c_text">
+                                        <div class="c_thumb">
+                                            <img src="image/clother/ao khoac_4.webp" alt="" />
+                                            <img class="front" src="image/clother/ao khoac_2.webp" alt="" />
+                                            <div class="c_icon">
+                                                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                                                <a href=""><i class="fa-solid fa-heart"></i></a>
+                                                <a href=""><i class="fa-solid fa-eye"></i></a>
+                                            </div>
+                                        </div>
+
+                                        <h4 class="h6">Women's windbreaker with hood</h4>
+                                        <p>499.000 VDN</p>
+                                        <span>New products</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="c_tag">
+                                <ul>
+                                    <li><a href="">TROUSER</a></li>
+                                    <li><a href="">SKIRT</a></li>
+                                    <li><a href="">T-SHIRT</a></li>
+                                    <li><a href="">HOODIE</a></li>
+                                    <li><a href="">SWEATHER</a></li>
+                                    <li><a href="">SHIRT</a></li>
+                                    <li><a href="">DRESS</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-register">
+            <h2>Sign up for the newsletter</h2>
+            <p>Join Canifa Blog to update the latest information on fashion and lifestyle.</p>
+            <div class="c_email">
+                <input type="email" placeholder="Enter your registration email" />
+                <button>Register</button>
+            </div>
+            <div class="c_social">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-solid fa-play"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+
+        <div class="c-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <h3>CANIFA JOINT STOCK COMPANY</h3>
+                        <p>
+                            Business registration number: 0107574310, date of issue: September 23, 2016, <br />Place of issue: Hanoi Department of
+                            Planning and Investment Head office <br />Address is at 688 Quang Trung Street, La Khe Ward, Ha Dong District, <br />Hanoi
+                            City. <br />Contact address: P301, 3rd floor, GP Invest building, 170 La Thanh, O Cho Dua Ward, <br />Dong Da District,
+                            Hanoi City. <br />Phone: +8424 - 7303.0222 <br />Fax: +8424 - 6277.6419 <br />Email: hello@canifa.com
+                        </p>
+                        <div class="c_social">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-solid fa-play"></i></a>
+                            <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3 >TRADEMARK</h3>
+                        <ul class="ps-0">
+                            <li><a href="">Introduce</a></li>
+                            <li><a href="">News</a></li>
+                            <li><a href="">Recruitment</a></li>
+                            <li><a href="">With the community</a></li>
+                            <li><a href="">Shop system</a></li>
+                            <li><a href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>SUPPORT</h3>
+                        <ul class="ps-0">
+                            <li><a href="">Q&A</a></li>
+                            <li><a href="">Information technology policy</a></li>
+                            <li><a href="">Conditions - Terms and Conditions Policy</a></li>
+                            <li><a href="">Shipping policy</a></li>
+                            <li><a href="">Suggestions for finding size</a></li>
+                            <li><a href="">Check your order</a></li>
+                            <li><a href="">Look up card points</a></li>
+                            <li><a href="">Customer information security policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h3>GET THE APP</h3>
+                        <div class="c_qr">
+                            <div class="c_qr1">
+                                <img src="image/app/app1.png" alt="" />
+                            </div>
+                            <div class="c_qr2">
+                                <img src="image/app/app2.png" alt="" />
+                                <div class="c_qr3">
+                                    <img src="image/app/app3.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                        <h3>PAYMENT METHODS</h3>
+                        <div class="c_qr4">
+                            <img src="image/app/app4.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="c-canifa">
+            <h3>&#169; 2023 CANIFA</h3>
+            <img src="image/bocongthuong.png" alt="" />
+        </div>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

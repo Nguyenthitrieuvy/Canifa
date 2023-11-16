@@ -1,0 +1,100 @@
+.c-footer {
+    margin-bottom: 30px;
+    
+    h3 {
+        font-size: 16px;
+        color: $dark-1;
+        font-weight: 600;
+        margin-bottom: 24px;
+        @media(max-width:991px){
+            margin-top: 20px;
+            
+        }
+    }
+    p {
+        font-size: 15px;
+    }
+    .c_social {
+        margin-top: 24px;
+        a {
+            background-color: #fff;
+            width: 30px;
+            height: 30px;
+            padding: 18px;
+            margin-right: 26px;
+            border-radius: 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #e6e7e8;
+            transition: 0.5s;
+            &:hover{
+                background-color: $primary-color;
+                color: #fff;
+                border: 1px solid $primary-color;
+            }
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+    ul {
+        @media(max-width:991px){
+            padding-left: 0;
+            margin-left: 0;
+        }
+        li {
+            margin-top: 16px;
+            a {
+                font-size: 15px;
+                transition: 0.5s;
+                &:hover{
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+    .c_qr {
+        display: flex;
+        width: 80%;
+        margin-bottom: 24px;
+        .c_qr1 {
+            margin-right: 8px;
+        }
+        .c_qr3 {
+            margin-top: 6px;
+        }
+    }
+    .c_qr4 {
+        width: 80%;
+    }
+    .c_canifa {
+        margin-top: 30px;
+        display: flex;
+    }
+}
+.c-canifa {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px;
+    border-top: 1px solid #e6e7e8;
+    @media(max-width:479px){
+        padding: 10px;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    img{
+        width: 8%;
+        @media(max-width:767px){
+            width: 20%;
+        }
+        @media(max-width:479px){
+            width: 30%;
+        }
+    }
+}
